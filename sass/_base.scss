@@ -1,0 +1,30 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+}
+
+.flex{
+    display: flex;
+}
+
+.block{
+    display: block;
+}
