@@ -1,0 +1,15 @@
+footer{
+    background-color: #e8eaee;
+    flex-direction: column;
+
+    #footerTop{
+        margin: auto;
+        width: 76%;
+        display: flex;
+        justify-content: space-between;
+        padding: 50px;
+        border-bottom: 2px solid hsl(215, 47%, 26%, 0.1);
+      
+        
+    }
+}
