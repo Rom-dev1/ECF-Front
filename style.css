@@ -113,7 +113,6 @@ header .connected {
   padding: 5px 20px;
   transform: skewX(-10deg);
   color: white;
-  margin-left: 10px;
 }
 
 .contentFirstSection {
@@ -125,6 +124,7 @@ header .connected {
   justify-content: center;
   flex-direction: column;
   width: 47%;
+  position: relative;
 }
 .contentFirstSection .information .titleCustom {
   width: 75%;
@@ -167,6 +167,13 @@ header .connected {
 .contentFirstSection .pictureOfDish .pattern {
   top: 385px;
   left: 670px;
+}
+.contentFirstSection img[alt=blop] {
+  position: absolute;
+  width: 20%;
+  opacity: 0.1;
+  left: -220px;
+  bottom: 0;
 }
 
 .pattern {
@@ -261,11 +268,10 @@ header .connected {
   margin-bottom: 180px;
 }
 .contentsThirdSection .information {
-  padding: 0 50px;
   width: 50%;
 }
 .contentsThirdSection .information .titleCustom {
-  width: 65%;
+  width: 67%;
 }
 .contentsThirdSection .information > span {
   color: #6415ff;
@@ -275,13 +281,14 @@ header .connected {
 .contentsThirdSection .information p {
   line-height: 1.5em;
   font-weight: bold;
+  font-size: 18px;
   opacity: 0.6;
-  width: 80%;
+  width: 85%;
   margin: 20px 0;
 }
 .contentsThirdSection .information .displayNumer {
   justify-content: start;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
 }
 .contentsThirdSection .information .displayNumer #order, .contentsThirdSection .information .displayNumer #users, .contentsThirdSection .information .displayNumer #chef {
   font-weight: bold;
@@ -290,7 +297,12 @@ header .connected {
 .contentsThirdSection .information .displayNumer .changeNumber {
   display: flex;
   flex-direction: column;
-  padding: 0 20px;
+  padding-right: 40px;
+}
+.contentsThirdSection .information .displayNumer .changeNumber :nth-child(2) {
+  margin-top: 10px;
+  color: #6415ff;
+  font-weight: bold;
 }
 .contentsThirdSection .pictureOfDish {
   position: relative;
@@ -310,7 +322,7 @@ header .connected {
 }
 
 footer {
-  background-color: #e8eaee;
+  background-color: hsla(215deg, 47%, 26%, 0.1);
   flex-direction: column;
 }
 footer #footerTop {
@@ -342,6 +354,7 @@ footer #footerTop .newsletter input {
   box-shadow: 1px 1px 5px hsla(215deg, 47%, 26%, 0.3);
   font-family: "inter", sans-serif;
   margin: 30px 0px;
+  font-size: 16px;
 }
 footer #footerTop .newsletter button {
   padding: 15px 30px;
@@ -371,7 +384,7 @@ footer #footerBottom img[alt=icon] {
   width: 40px;
   border-radius: 50%;
   padding: 10px;
-  margin: 0 10px;
+  margin: 0 5px;
 }
 
 /*# sourceMappingURL=style.css.map */

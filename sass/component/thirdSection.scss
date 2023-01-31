@@ -3,11 +3,11 @@
     margin-bottom: 180px;
 
     .information{
-        padding: 0 50px ;
+        
         width: 50%;
 
         .titleCustom{
-            width: 65%;
+            width: 67%;
         }
 
         > span{
@@ -19,15 +19,16 @@
         p{
             line-height: 1.5em;
             font-weight: bold;
+            font-size: 18px;
             opacity: 0.6;
-            width: 80%;
+            width: 85%;
             margin: 20px 0;
         }
 
         .displayNumer{
 
             justify-content: start;
-            margin-bottom: 30px;
+            margin-bottom: 50px;
 
             #order, #users, #chef{
                 font-weight: bold;
@@ -37,7 +38,13 @@
             .changeNumber{
                 display: flex;
                 flex-direction: column;
-                padding: 0 20px;
+                padding-right: 40px;
+
+                :nth-child(2){
+                    margin-top: 10px;
+                    color: $color-secondary;
+                    font-weight: bold;
+                }
             }
             
         }
