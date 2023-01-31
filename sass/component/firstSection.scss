@@ -1,0 +1,60 @@
+.contents {
+    justify-content: space-between;
+    margin: 80px 0;
+
+    .information{
+        padding: 80px 0;
+        width: 45%;
+
+        .titleCustom{
+            width: 85%;
+        }
+    }
+    p{
+        margin: 50px 0;
+        font-weight: bold;
+        opacity: 0.6;
+        width: 80%;
+    }
+    .interaction{
+        justify-content: space-between;
+        width: 80%;
+
+        button:first-child{
+            margin: 0;
+            font-weight: bold;
+        }
+        
+        button:last-child{
+            align-items: center;
+            justify-content: space-around;
+            background-color: white;
+            width: 50%;
+            border: none;
+            
+                img{
+                    width: 50px;
+                }
+            
+        }
+    }
+
+    .pictureOfDish{
+        position: relative;
+        width: 50%;
+        z-index: 2;
+        img:first-child{
+            border-radius: 40px;
+            z-index: 2;
+        }
+
+        .pattern{
+            position: absolute;
+            top: 400px;
+            left: 660px;
+            z-index: -1;
+            width: 20%;
+            opacity: 0.3;
+        }
+    }
+}
