@@ -10,7 +10,7 @@
         width: 50%;
 
         .titleCustom{
-            width: 65%;
+            width: 68%;
         }
     }
     p{
@@ -44,12 +44,11 @@
 
     .pictureOfDish{
         position: relative;
-        width: 50%;
+        width: 48%;
         z-index: 2;
         justify-content: end;
 
         img:first-child{
-            width: 90%;
             border-radius: 40px;
             z-index: 2;
             background-size: cover;
