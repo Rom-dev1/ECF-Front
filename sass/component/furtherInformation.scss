@@ -1,8 +1,9 @@
 .furtherInformation{
-    width: 70%;
+    width: 65%;
     margin: auto;
     justify-content: space-between;
-    margin-bottom: 200px;
+    margin-bottom: 300px;
+    position: relative;
 
     .moreInformation{
 
@@ -23,6 +24,19 @@
             font-weight: bold;
             color: $color-secondary;
             margin-top: 20px;
+
+            img{
+                width: 20px;
+                color: red;
+            }
+        }
+
+        img[alt=blob]{
+            width: 25%;
+            opacity: 0.3;
+            position: absolute;
+            right: -560px;
+            top: 150px;
         }
     }
 }
