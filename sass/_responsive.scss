@@ -1,0 +1,35 @@
+@import 'base';
+@import './component/header.scss';
+
+
+@include mobile{
+    .container{
+        width: 90%;
+    }
+
+    header{
+
+        a{
+            display: none;
+        }
+
+        .connected{
+            display: none;
+        }
+    }
+
+    .contentFirstSection{
+        flex-direction: column;
+       
+        .information{
+            width: 100%;
+            align-items: center;
+            margin: auto;
+
+            h2{
+                font-size: 32px;
+                display: inline-block;
+            }
+        }
+    }
+}
