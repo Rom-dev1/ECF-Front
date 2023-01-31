@@ -1,13 +1,16 @@
-.contents {
+
+.contentFirstSection {
     justify-content: space-between;
-    margin: 80px 0;
+    margin-top: 80px;
 
     .information{
-        padding: 80px 0;
-        width: 45%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 50%;
 
         .titleCustom{
-            width: 85%;
+            width: 65%;
         }
     }
     p{
@@ -43,18 +46,19 @@
         position: relative;
         width: 50%;
         z-index: 2;
+        justify-content: end;
+
         img:first-child{
+            width: 90%;
             border-radius: 40px;
             z-index: 2;
+            background-size: cover;
         }
 
         .pattern{
-            position: absolute;
             top: 400px;
             left: 660px;
-            z-index: -1;
-            width: 20%;
-            opacity: 0.3;
         }
     }
 }
+
