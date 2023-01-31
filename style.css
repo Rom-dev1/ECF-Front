@@ -98,20 +98,22 @@ header .connected {
 }
 
 .buttonCustom {
-  padding: 10px 30px;
+  padding: 15px 30px;
   background-color: #6415ff;
   border-radius: 5px;
   color: #e8eaee;
   border: 0px;
   font-size: 16px;
   font-weight: bold;
+  color: white;
 }
 
 .titleCustom {
   background-color: #6415ff;
-  padding: 0 15px;
+  padding: 5px 20px;
   transform: skewX(-10deg);
-  color: #e8eaee;
+  color: white;
+  margin-left: 10px;
 }
 
 .contentFirstSection {
@@ -125,7 +127,7 @@ header .connected {
   width: 47%;
 }
 .contentFirstSection .information .titleCustom {
-  width: 74%;
+  width: 75%;
 }
 .contentFirstSection p {
   margin: 50px 0;
@@ -163,8 +165,8 @@ header .connected {
   z-index: 1;
 }
 .contentFirstSection .pictureOfDish .pattern {
-  top: 400px;
-  left: 660px;
+  top: 385px;
+  left: 670px;
 }
 
 .pattern {
@@ -179,29 +181,26 @@ header .connected {
   margin-top: 180px;
 }
 .contentSecondSection .information {
-  padding: 0 50px;
-  width: 55%;
+  padding: 0 70px;
+  width: 53%;
 }
 .contentSecondSection .information .titleCustom {
-  width: 65%;
+  width: 70%;
 }
 .contentSecondSection .information span {
   color: #6415ff;
-  line-height: 2em;
+  line-height: 3em;
   font-weight: bold;
 }
 .contentSecondSection .information p {
-  margin: 50px 0;
+  margin: 40px 0;
   font-weight: bold;
   opacity: 0.6;
-  width: 80%;
-}
-.contentSecondSection .information .titleCustom {
-  width: 58%;
+  width: 90%;
 }
 .contentSecondSection .pictureOfDish {
   position: relative;
-  width: 55%;
+  width: 50%;
   z-index: 1;
   justify-content: end;
 }
@@ -212,20 +211,21 @@ header .connected {
   background-size: cover;
 }
 .contentSecondSection .pictureOfDish .pattern {
-  top: 380px;
+  top: 395px;
   left: 300px;
 }
 
 .mid {
   justify-content: center;
-  margin: 150px 0px 100px 0;
+  margin: 220px 0px 100px 0;
 }
 
 .furtherInformation {
-  width: 70%;
+  width: 65%;
   margin: auto;
   justify-content: space-between;
-  margin-bottom: 200px;
+  margin-bottom: 300px;
+  position: relative;
 }
 .furtherInformation .moreInformation {
   flex-direction: column;
@@ -243,6 +243,17 @@ header .connected {
   font-weight: bold;
   color: #6415ff;
   margin-top: 20px;
+}
+.furtherInformation .moreInformation .knowMoreInformation img {
+  width: 20px;
+  color: red;
+}
+.furtherInformation .moreInformation img[alt=blob] {
+  width: 25%;
+  opacity: 0.3;
+  position: absolute;
+  right: -560px;
+  top: 150px;
 }
 
 .contentsThirdSection {
@@ -307,8 +318,60 @@ footer #footerTop {
   width: 76%;
   display: flex;
   justify-content: space-between;
-  padding: 50px;
+  padding: 50px 0;
   border-bottom: 2px solid hsla(215deg, 47%, 26%, 0.1);
+}
+footer #footerTop h4 {
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+footer #footerTop li {
+  line-height: 2em;
+}
+footer #footerTop .newsletter {
+  line-height: 2em;
+}
+footer #footerTop .newsletter p {
+  width: 90%;
+}
+footer #footerTop .newsletter input {
+  padding: 15px 30px;
+  background-color: hsla(215deg, 47%, 26%, 0.1);
+  border: 2px solid hsla(215deg, 47%, 26%, 0.1);
+  border-radius: 5px;
+  box-shadow: 1px 1px 5px hsla(215deg, 47%, 26%, 0.3);
+  font-family: "inter", sans-serif;
+  margin: 30px 0px;
+}
+footer #footerTop .newsletter button {
+  padding: 15px 30px;
+}
+footer #footerBottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 76%;
+  margin: auto;
+  padding: 50px 0;
+}
+footer #footerBottom .logo img {
+  width: 50px;
+}
+footer #footerBottom .logo h1 {
+  font-weight: 900;
+  margin: 5px 0 0 10px;
+}
+footer #footerBottom span {
+  color: hsla(215deg, 47%, 26%, 0.4);
+  font-weight: bold;
+}
+footer #footerBottom img[alt=icon] {
+  flex-direction: column;
+  background-color: black;
+  width: 40px;
+  border-radius: 50%;
+  padding: 10px;
+  margin: 0 10px;
 }
 
 /*# sourceMappingURL=style.css.map */
