@@ -28,8 +28,12 @@ a {
     text-decoration: none;
 }
 
+p {
+    line-height: 1.5em;
+}
+
 .container{
-    width: 80%;
+    width: 76%;
     margin: auto;
 }
 
@@ -46,10 +50,18 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0;
 }
 
-h1::first-letter, h2::first-letter, h3::first-letter, h4::first-letter, span::first-letter, p::first-letter, li::first-letter{
+h2{
+    font-weight:900;
+    font-size: 52px;
+}
+
+h1::first-letter, h2::first-letter, h3::first-letter, h4::first-letter, span::first-letter, p::first-letter, li::first-letter, button::first-letter{
     text-transform: uppercase;
 }
 
 button{
     margin: 0;
+    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+    color: $color-text;
 }
