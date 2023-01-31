@@ -155,25 +155,25 @@ header .connected {
 }
 .contentFirstSection .pictureOfDish {
   position: relative;
-  width: 55%;
+  width: 50%;
   z-index: 2;
   justify-content: end;
 }
 .contentFirstSection .pictureOfDish img:first-child {
-  width: 95%;
+  width: 100%;
   border-radius: 40px;
   z-index: 1;
 }
 .contentFirstSection .pictureOfDish .pattern {
   top: 385px;
-  left: 670px;
+  left: 620px;
 }
 .contentFirstSection img[alt=blop] {
   position: absolute;
   width: 20%;
   opacity: 0.1;
   left: -220px;
-  bottom: 0;
+  top: 480px;
 }
 
 .pattern {
