@@ -4,34 +4,31 @@
     margin-top: 180px;
 
     .information{
-        padding: 0 50px ;
-        width: 55%;
+        padding: 0 70px ;
+        width: 53%;
         .titleCustom{
-            width: 65%;
+            width: 70%;
         }
 
         span{
             color: $color-secondary;
-            line-height: 2em;
+            line-height: 3em;
             font-weight: bold;
         }
     
         p{
-            margin: 50px 0;
+            margin: 40px 0;
             font-weight: bold;
             opacity: 0.6;
-            width: 80%;
+            width: 90%;
         }
 
-        .titleCustom{
-            width: 58%;
-        }
     } 
     
 
     .pictureOfDish{
         position: relative;
-        width: 55%;
+        width: 50%;
         z-index: 1;
         justify-content: end;
 
@@ -43,7 +40,7 @@
         }
 
         .pattern{
-            top: 380px;
+            top: 395px;
             left: 300px;
         }
     }
