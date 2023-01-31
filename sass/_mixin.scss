@@ -10,9 +10,9 @@
 
 @mixin titleCustom(){
     background-color: $color-secondary;
-    padding: 0 15px;
+    padding: 5px 20px;
     transform:  skewX(-10deg);
-    color: $color-third;
+    color: white
 
 }
 
