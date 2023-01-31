@@ -7,9 +7,74 @@ footer{
         width: 76%;
         display: flex;
         justify-content: space-between;
-        padding: 50px;
+        padding: 50px 0;
         border-bottom: 2px solid hsl(215, 47%, 26%, 0.1);
+        
+        h4{
+            margin-bottom: 20px;
+            text-transform: uppercase;
+        }
+        
+        li{
+            line-height: 2em;
+        }
+
+        .newsletter{
+            line-height: 2em;
+
+            p{
+                width: 90%;
+            }
+            input{
+                padding: 15px 30px;
+                background-color: hsl(215, 47%, 26%, 0.1);
+                border: 2px solid hsl(215, 47%, 26%, 0.1);
+                border-radius: 5px;
+                box-shadow: 1px 1px 5px hsl(215, 47%, 26%, 0.3);
+                font-family: 'inter', sans-serif;
+                margin: 30px 0px;
+            }
+
+            button{
+                padding: 15px 30px;
+            }
+        }
       
         
+    }
+
+    #footerBottom{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 76%;
+        margin: auto;
+        padding: 50px 0;
+
+       .logo img{
+            width: 50px;
+            
+        }
+
+        .logo h1{
+            font-weight: 900;
+            margin: 5px 0 0 10px
+        }
+
+        span{
+            color: hsl(215, 47%, 26%, 0.4);
+            font-weight: bold;
+        }
+
+        
+        img[alt=icon]{
+            flex-direction: column;
+            background-color: black;
+            width: 40px;
+            border-radius: 50%;
+            padding: 10px;
+            margin: 0 10px;
+          
+        }
     }
 }
