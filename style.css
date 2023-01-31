@@ -26,8 +26,12 @@ a {
   text-decoration: none;
 }
 
+p {
+  line-height: 1.5em;
+}
+
 .container {
-  width: 80%;
+  width: 76%;
   margin: auto;
 }
 
@@ -44,12 +48,20 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
 }
 
-h1::first-letter, h2::first-letter, h3::first-letter, h4::first-letter, span::first-letter, p::first-letter, li::first-letter {
+h2 {
+  font-weight: 900;
+  font-size: 52px;
+}
+
+h1::first-letter, h2::first-letter, h3::first-letter, h4::first-letter, span::first-letter, p::first-letter, li::first-letter, button::first-letter {
   text-transform: uppercase;
 }
 
 button {
   margin: 0;
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
+  color: #243e63;
 }
 
 header {
@@ -67,15 +79,15 @@ header .logo > img {
   margin-right: 20px;
 }
 header .logo h1 {
-  font-weight: bold;
+  font-weight: 900;
   padding-top: 5px;
 }
 header nav {
-  width: 50%;
+  width: 60%;
   align-items: center;
 }
 header nav ul {
-  margin: 0 40px;
+  margin: 0 60px;
   width: 60%;
   justify-content: space-between;
 }
@@ -83,8 +95,6 @@ header .connected {
   width: 30%;
   justify-content: space-between;
   align-items: center;
-  flex-grow: 2;
-  margin: 0 30px;
 }
 
 .buttonCustom {
@@ -93,8 +103,117 @@ header .connected {
   border-radius: 5px;
   color: #e8eaee;
   border: 0px;
-  margin: 0 20px;
   font-size: 16px;
+  font-weight: bold;
+}
+
+.titleCustom {
+  background-color: #6415ff;
+  padding: 0 15px;
+  transform: skewX(-10deg);
+  color: #e8eaee;
+  background-attachment: fixed;
+}
+
+.contentFirstSection {
+  justify-content: space-between;
+  margin-top: 80px;
+}
+.contentFirstSection .information {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 50%;
+}
+.contentFirstSection .information .titleCustom {
+  width: 74%;
+}
+.contentFirstSection p {
+  margin: 50px 0;
+  font-weight: bold;
+  opacity: 0.6;
+  width: 80%;
+}
+.contentFirstSection .interaction {
+  justify-content: space-between;
+  width: 80%;
+}
+.contentFirstSection .interaction button:first-child {
+  margin: 0;
+  font-weight: bold;
+}
+.contentFirstSection .interaction button:last-child {
+  align-items: center;
+  justify-content: space-around;
+  background-color: white;
+  width: 50%;
+  border: none;
+}
+.contentFirstSection .interaction button:last-child img {
+  width: 50px;
+}
+.contentFirstSection .pictureOfDish {
+  position: relative;
+  width: 60%;
+  z-index: 2;
+  justify-content: end;
+}
+.contentFirstSection .pictureOfDish img:first-child {
+  width: 95%;
+  border-radius: 40px;
+  z-index: 1;
+}
+.contentFirstSection .pictureOfDish .pattern {
+  top: 400px;
+  left: 660px;
+}
+
+.pattern {
+  position: absolute;
+  z-index: -1;
+  width: 20%;
+  opacity: 0.3;
+}
+
+.contentSecondSection {
+  justify-content: space-between;
+  margin-top: 180px;
+}
+.contentSecondSection .information {
+  padding: 0 50px;
+}
+.contentSecondSection .information .titleCustom {
+  width: 65%;
+}
+.contentSecondSection .information span {
+  color: #6415ff;
+  line-height: 2em;
+  font-weight: bold;
+}
+.contentSecondSection .information p {
+  margin: 50px 0;
+  font-weight: bold;
+  opacity: 0.6;
+  width: 80%;
+}
+.contentSecondSection .information .titleCustom {
+  width: 58%;
+}
+.contentSecondSection .pictureOfDish {
+  position: relative;
+  width: 67%;
+  z-index: 1;
+  justify-content: end;
+}
+.contentSecondSection .pictureOfDish img:first-child {
+  width: 100%;
+  border-radius: 40px;
+  z-index: 2;
+  background-size: cover;
+}
+.contentSecondSection .pictureOfDish .pattern {
+  top: 380px;
+  left: 300px;
 }
 
 /*# sourceMappingURL=style.css.map */
