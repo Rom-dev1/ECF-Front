@@ -2,3 +2,6 @@
 @import 'variables';
 @import 'mixin';
 @import 'responsive';
+
+@import './component/header.scss';
+@import './component/buttonCustom.scss'

@@ -1,3 +1,5 @@
+@import 'variables';
+
 *{
     box-sizing: border-box;
     margin: 0;
@@ -7,6 +9,7 @@
 body{
     font-family: 'Inter', sans-serif;
     font-size: 16px;
+    color: $color-text;
 }
 
 html {
@@ -15,6 +18,10 @@ html {
 
 ul {
     list-style: none;
+}
+
+ul li a{
+    color: $color-text;
 }
 
 a {
@@ -28,9 +35,21 @@ a {
 
 .flex{
     display: flex;
-    flex-direction: column;
 }
 
 .block{
     display: block;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-transform: none;
+    margin: 0;
+}
+
+h1::first-letter, h2::first-letter, h3::first-letter, h4::first-letter, span::first-letter, p::first-letter, li::first-letter{
+    text-transform: uppercase;
+}
+
+button{
+    margin: 0;
 }
