@@ -112,7 +112,6 @@ header .connected {
   padding: 0 15px;
   transform: skewX(-10deg);
   color: #e8eaee;
-  background-attachment: fixed;
 }
 
 .contentFirstSection {
@@ -123,7 +122,7 @@ header .connected {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  width: 50%;
+  width: 47%;
 }
 .contentFirstSection .information .titleCustom {
   width: 74%;
@@ -154,7 +153,7 @@ header .connected {
 }
 .contentFirstSection .pictureOfDish {
   position: relative;
-  width: 60%;
+  width: 55%;
   z-index: 2;
   justify-content: end;
 }
@@ -181,6 +180,7 @@ header .connected {
 }
 .contentSecondSection .information {
   padding: 0 50px;
+  width: 55%;
 }
 .contentSecondSection .information .titleCustom {
   width: 65%;
@@ -201,7 +201,7 @@ header .connected {
 }
 .contentSecondSection .pictureOfDish {
   position: relative;
-  width: 67%;
+  width: 55%;
   z-index: 1;
   justify-content: end;
 }
@@ -214,6 +214,101 @@ header .connected {
 .contentSecondSection .pictureOfDish .pattern {
   top: 380px;
   left: 300px;
+}
+
+.mid {
+  justify-content: center;
+  margin: 150px 0px 100px 0;
+}
+
+.furtherInformation {
+  width: 70%;
+  margin: auto;
+  justify-content: space-between;
+  margin-bottom: 200px;
+}
+.furtherInformation .moreInformation {
+  flex-direction: column;
+  align-items: center;
+}
+.furtherInformation .moreInformation .bgLight {
+  background-color: #e8eaee;
+  border-radius: 50%;
+}
+.furtherInformation .moreInformation h3 {
+  margin: 20px 0;
+  font-weight: 900;
+}
+.furtherInformation .moreInformation .knowMoreInformation {
+  font-weight: bold;
+  color: #6415ff;
+  margin-top: 20px;
+}
+
+.contentsThirdSection {
+  justify-content: space-between;
+  margin-bottom: 180px;
+}
+.contentsThirdSection .information {
+  padding: 0 50px;
+  width: 50%;
+}
+.contentsThirdSection .information .titleCustom {
+  width: 65%;
+}
+.contentsThirdSection .information > span {
+  color: #6415ff;
+  line-height: 3em;
+  font-weight: bold;
+}
+.contentsThirdSection .information p {
+  line-height: 1.5em;
+  font-weight: bold;
+  opacity: 0.6;
+  width: 80%;
+  margin: 20px 0;
+}
+.contentsThirdSection .information .displayNumer {
+  justify-content: start;
+  margin-bottom: 30px;
+}
+.contentsThirdSection .information .displayNumer #order, .contentsThirdSection .information .displayNumer #users, .contentsThirdSection .information .displayNumer #chef {
+  font-weight: bold;
+  font-size: 24px;
+}
+.contentsThirdSection .information .displayNumer .changeNumber {
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px;
+}
+.contentsThirdSection .pictureOfDish {
+  position: relative;
+  width: 50%;
+  z-index: 1;
+  justify-content: end;
+}
+.contentsThirdSection .pictureOfDish img:first-child {
+  width: 100%;
+  border-radius: 40px;
+  z-index: 2;
+  background-size: cover;
+}
+.contentsThirdSection .pictureOfDish .pattern {
+  top: 410px;
+  left: 300px;
+}
+
+footer {
+  background-color: #e8eaee;
+  flex-direction: column;
+}
+footer #footerTop {
+  margin: auto;
+  width: 76%;
+  display: flex;
+  justify-content: space-between;
+  padding: 50px;
+  border-bottom: 2px solid hsla(215deg, 47%, 26%, 0.1);
 }
 
 /*# sourceMappingURL=style.css.map */
