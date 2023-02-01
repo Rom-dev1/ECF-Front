@@ -10,3 +10,17 @@ order.addEventListener('click', () => {
     content.classList.add('displaynone')
 })
 
+//JS 3
+let addyear = document.querySelector("#addyear")
+let year = document.querySelector("#year")
+let counter = 5
+
+addyear.addEventListener('click', () => {
+    counter++
+    year.textContent = `depuis ${counter} ans.`
+})
+           
+
+
+
+
