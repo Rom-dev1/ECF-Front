@@ -1,4 +1,3 @@
-
 .contentFirstSection {
     justify-content: space-between;
     margin-top: 80px;
@@ -8,18 +7,15 @@
         width: 47%;
         position: relative;
 
-        // .titleCustom{
-        //     width: 75%;
-        // }
-    }
-    p{
-        margin: 50px 0;
-        font-weight: bold;
-        opacity: 0.6;
-        font-size: 18px;
+    
+        p{
+            margin: 50px 0;
+            font-weight: bold;
+            opacity: 0.6;
+            font-size: 18px;
+        }
     }
     .interaction{
-        
         justify-content: space-between;
         width: 100%;
 
@@ -33,19 +29,15 @@
             background-color: white;
             width: 50%;
             border: none;
-                :hover{
-                    color: $color-secondary;
-                }
-            
-                img{
-                    width: 50px;
-                    margin-right: 20px;
 
-                    :hover{
-                        color: $color-secondary;
-                    }
-                }
-            
+            &:hover{
+                color: $color-secondary;
+            }
+        
+            img{
+                width: 50px;
+                margin-right: 20px;
+            }
         }
     }
 

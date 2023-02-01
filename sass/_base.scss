@@ -11,7 +11,6 @@ body{
     font-size: 16px;
     color: $color-text;
     overflow-x: hidden;
-    
 }
 
 html {
@@ -49,6 +48,10 @@ p{
     display: block;
 }
 
+.displaynone{
+    display: none;
+}
+
 h1, h2, h3, h4, h5, h6 {
     text-transform: none;
     margin: 0;
@@ -70,12 +73,6 @@ button{
     font-family: 'Inter', sans-serif;
     color: $color-text;
 }
-
-
-.displaynone{
-    display: none;
-}
-
 .menu{
     width: 90%;
     background-color: white;

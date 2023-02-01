@@ -5,9 +5,7 @@
     margin-bottom: 300px;
     position: relative;
     
-
     .moreInformation{
-
         flex-direction: column;
         align-items: center;
 
@@ -32,6 +30,7 @@
             transform: scale(1.1);
         }
     }
+
     img[alt=blob]{
         width: 25%;
         opacity: 0.3;
@@ -39,5 +38,4 @@
         right: -560px;
         top: 150px;
     }
-    
 }
