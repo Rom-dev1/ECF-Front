@@ -23,10 +23,12 @@ footer{
             li a{
                 padding-bottom: 5px;
             }
+
             a:hover{
                 border-bottom: 1px solid black;
             }
         }
+
         .newsletter{
             line-height: 2em;
 
@@ -69,14 +71,16 @@ footer{
         margin: auto;
         padding: 50px 0;
 
-       .logo img{
-            width: 50px;
-            
-        }
-
-        .logo h1{
-            font-weight: 900;
-            margin: 5px 0 0 10px
+        .logo {
+            img{
+                width: 50px;
+                
+            }
+    
+            .h1{
+                font-weight: 900;
+                margin: 5px 0 0 10px
+            }
         }
 
         span{

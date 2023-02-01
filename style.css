@@ -262,6 +262,9 @@ header .connected {
     bottom: 70px;
     left: 30px;
   }
+  .contentFirstSection .pictureOfDish #videoyoutube {
+    width: 100%;
+  }
   .contentSecondSection {
     flex-direction: column;
   }
@@ -704,7 +707,7 @@ footer #footerBottom {
 footer #footerBottom .logo img {
   width: 50px;
 }
-footer #footerBottom .logo h1 {
+footer #footerBottom .logo .h1 {
   font-weight: 900;
   margin: 5px 0 0 10px;
 }
@@ -903,6 +906,9 @@ header .connected {
   .contentFirstSection .pictureOfDish .pattern {
     bottom: 70px;
     left: 30px;
+  }
+  .contentFirstSection .pictureOfDish #videoyoutube {
+    width: 100%;
   }
   .contentSecondSection {
     flex-direction: column;
