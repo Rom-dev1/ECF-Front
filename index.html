@@ -38,7 +38,10 @@
         </header>
 
         <main>
-            <section class="contentFirstSection flex">
+            <div id="emptydiv">
+            <span id="emptyorder"></span>
+            </div>
+            <section class="contentFirstSection flex" id="hide" >
                 <div class="information">
                     <h2>délicieux & abordable</h2>
                     <h2 class="titleCustom ">Repas chez vous.</h2>
@@ -46,7 +49,7 @@
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                     </p>
                     <div class="interaction flex">
-                        <button class="buttonCustom">commander maintenant</button>
+                        <button class="buttonCustom" id="order">commander maintenant</button>
                         <button class="flex">
                             <img src="./img/play-circle.svg" alt="">
                             <span>Rencontrer les chefs</span> 
@@ -68,7 +71,7 @@
                 <div class="information">
                     <span>installé depuis 2014</span>
                     <h2>nous vous servons</h2>
-                    <h2 class="titleCustom">depuis 5 ans.</h2>
+                    <h2 class="titleCustom" id="Year">depuis 5 ans.</h2>
                     <p>
                         lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                     </p>
@@ -252,6 +255,6 @@
         </footer>
     
     
-    <script src="./js/app.js"></script>
+<script src="./js/app.js"></script>
 </body>
 </html>
