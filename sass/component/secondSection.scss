@@ -5,10 +5,10 @@
 
     .information{
         padding: 0 70px ;
-        width: 53%;
+        width: 55%;
         
         span{
-            color: $color-secondary;
+            color: $color-secondaryLight;
             line-height: 3em;
             font-weight: bold;
         }
@@ -30,10 +30,9 @@
         justify-content: end;
 
         img:first-child{
-            
+            width: 100%;;
             border-radius: 40px;
             z-index: 2;
-            background-size: cover;
         }
 
         .pattern{
