@@ -8,37 +8,40 @@
     }
 
     header{
-        
+        padding:  20px;
         img:last-child{
             display: flex;
         }
         nav{
             flex-direction: column;
             justify-content: space-between;
-
+            
             a{
                 margin-bottom: 20px;
             }
         }
         .connected{
             flex-direction: column;
+            
+            span{
+                margin-bottom: 20px;
+            }
         }
 
-        .menu{
-            z-index: 2;
-            width: 100%;
-            border: 1px solid black;
-        }
+        
     }
 
     .contentFirstSection{
         flex-direction: column;
-       
+        margin-top: 0;
+
         .information{
             width: 90%;
             align-items: center;
             margin: auto;
             text-align: center;
+            padding: 0;
+            padding-bottom: 40px;
 
             h2{
                 font-size: 32px;

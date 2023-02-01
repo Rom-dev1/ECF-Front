@@ -58,4 +58,22 @@ send.addEventListener('click', () => {
 
 })
 
+//menu 
+
+let menu = document.querySelector("#navMenu")
+let icon = document.querySelector("#icon")
+let logo = document
+
+window.addEventListener('resize', () => {
+    console.log(window.innerWidth)
+    window.innerWidth < 768 ? menu.classList.add('displaynone') : null
+    window.innerWidth > 768 ? menu.classList.remove('displaynone', 'menu') : null
+})
+
+let iconmenu = document.querySelector("#iconMenu")
+iconmenu.addEventListener('click', () => {
+    menu.classList.replace('displaynone','menu')
+     
+})
+
 
