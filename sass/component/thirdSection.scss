@@ -52,8 +52,6 @@
         position: relative;
         width: 50%;
         z-index: 1;
-        justify-content: end;
-
         img:first-child{
             width: 100%;
             border-radius: 40px;
@@ -61,8 +59,13 @@
         }
 
         .pattern{
-            top: 410px;
-            left: 300px;
+            
+            bottom: 50px;
+            margin: auto;
         }
+            
+    
+
+        
     }
 }

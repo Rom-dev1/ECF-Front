@@ -25,7 +25,8 @@
 }
 
 @mixin pattern(){
-    position: absolute;
+    display: flex;
+    position: relative;
     z-index: -1;
     width: 20%;
     opacity: 0.3;

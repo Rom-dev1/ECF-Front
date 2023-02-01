@@ -50,10 +50,11 @@
     }
 
     .pictureOfDish{
+        flex-direction: column;
+        align-items: flex-end;
         position: relative;
         width: 50%;
         z-index: 2;
-        justify-content: end;
 
         img:first-child{
             width: 100%;
@@ -62,8 +63,9 @@
         }
 
         .pattern{
-            top: 385px;
-            left: 620px;
+            margin-right: 0;
+            right: 0;
+            bottom: 50px;
         }
     }
 
