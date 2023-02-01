@@ -44,6 +44,18 @@ random.addEventListener('click', () => {
     }
 })
 
+// JS 5
 
+let input = document.querySelector("#toInput")
+let send = document.querySelector("#send")
+let message = document.querySelector("#message")
+
+send.addEventListener('click', () => {
+    console.log(input.value)
+    message.textContent = `Merci ${input.value}!`
+    input.classList.add('displaynone')
+    send.classList.add('displaynone')
+
+})
 
 

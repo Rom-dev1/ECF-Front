@@ -52,13 +52,14 @@
                         <button class="buttonCustom" id="order">commander maintenant</button>
                         <button class="flex">
                             <img src="./img/play-circle.svg" alt="">
-                            <span>Rencontrer les chefs</span> 
+                            <span id="tomeet">Rencontrer les chefs</span> 
                         </button>
                     </div>
                 </div>
                 <div class="pictureOfDish flex">
-                    <img src="./img/image-1.jpeg" alt="">
-                    <img class="pattern" src="./img/dot-pattern.svg" alt="">
+                    <img class="pictureFirstSection" src="./img/image-1.jpeg" alt="">
+                    <img class="pictureFirstSection pattern" src="./img/dot-pattern.svg" alt="">
+                    <iframe id="videoyoutube" class="displaynone" width="720" height="483" src="https://www.youtube.com/embed/_GuOjXYl5ew" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                 </div>
                 <img src="./img/svg-decorator-blob-1.svg" alt="blop">
             </section>
@@ -133,20 +134,20 @@
                     </p>
                     <div class="displayNumber flex">
                         <div class="changeNumber">
-                            <span id="order">94000+</span>
+                            <span class="number" id="order">94000+</span>
                             <span>commandes</span>
                         </div>
                         <div class="changeNumber">
-                            <span id="users">11000+</span>
+                            <span class="number" id="users">11000+</span>
                             <span>clients</span>
                         </div>
                         <div class="changeNumber">
-                            <span id="chef">1500+</span>
+                            <span class="number" id="chef">1500+</span>
                             <span>chefs</span>
                         </div>
                     </div>
-                    <button class="buttonCustom">
-                        nombres aléatoires entre 1 et 999999
+                    <button class="buttonCustom" id="randomNumber">
+                        nombres aléatoires entre 1 et 99999
                     </button>
                 </div>
                 <div class="pictureOfDish">
@@ -232,10 +233,11 @@
                     <p>
                         nous vous enverrons de bonnes choses à manger sans spam
                     </p>
-                    <input type="email" placeholder="Votre adresse email">
-                        <button class="buttonCustom">S'inscrire</button>
-                    </input>
+                    <input type="email" required="required" id="toInput" placeholder="Votre adresse email">
+                    <input type="submit" class="buttonCustom" id="send" value="s'inscrire">
+                    <span id="message"></span>
                 </div>
+                
             </div>
             <div id="footerBottom">
                 <div class="logo flex">

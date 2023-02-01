@@ -8,6 +8,7 @@ body {
   font-family: "Inter", sans-serif;
   font-size: 16px;
   color: #243e63;
+  overflow-x: hidden;
 }
 
 html {
@@ -75,6 +76,7 @@ body {
   font-family: "Inter", sans-serif;
   font-size: 16px;
   color: #243e63;
+  overflow-x: hidden;
 }
 
 html {
@@ -150,6 +152,9 @@ header .logo h1 {
   font-weight: 900;
   padding-top: 5px;
 }
+header .logo h1:hover {
+  color: #6415ff;
+}
 header nav {
   width: 60%;
   align-items: center;
@@ -158,6 +163,11 @@ header nav ul {
   margin: 0 60px;
   width: 60%;
   justify-content: space-between;
+}
+header nav a:hover {
+  color: #6415ff;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #6415ff;
 }
 header .connected {
   width: 30%;
@@ -222,7 +232,6 @@ header .connected {
     align-items: center;
   }
   .contentSecondSection .pictureOfDish img {
-    width: 100%;
     margin-bottom: 100px;
   }
   .contentSecondSection .pictureOfDish .pattern {
@@ -317,6 +326,9 @@ header .logo h1 {
   font-weight: 900;
   padding-top: 5px;
 }
+header .logo h1:hover {
+  color: #6415ff;
+}
 header nav {
   width: 60%;
   align-items: center;
@@ -325,6 +337,11 @@ header nav ul {
   margin: 0 60px;
   width: 60%;
   justify-content: space-between;
+}
+header nav a:hover {
+  color: #6415ff;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #6415ff;
 }
 header .connected {
   width: 30%;
@@ -383,9 +400,15 @@ header .connected {
   width: 50%;
   border: none;
 }
+.contentFirstSection .interaction button:last-child :hover {
+  color: #6415ff;
+}
 .contentFirstSection .interaction button:last-child img {
   width: 50px;
   margin-right: 20px;
+}
+.contentFirstSection .interaction button:last-child img :hover {
+  color: #6415ff;
 }
 .contentFirstSection .pictureOfDish {
   position: relative;
@@ -410,6 +433,21 @@ header .connected {
   top: 480px;
 }
 
+.displaynone {
+  display: none;
+}
+
+#emptydiv {
+  text-align: center;
+  margin-top: 100px;
+}
+
+#emptyorder {
+  font-size: 28px;
+  color: hwb(177deg 22% 30%);
+  margin: auto;
+}
+
 .pattern {
   position: absolute;
   z-index: -1;
@@ -423,10 +461,10 @@ header .connected {
 }
 .contentSecondSection .information {
   padding: 0 70px;
-  width: 53%;
+  width: 55%;
 }
 .contentSecondSection .information span {
-  color: #6415ff;
+  color: hsl(260deg, 100%, 72%);
   line-height: 3em;
   font-weight: bold;
 }
@@ -443,9 +481,9 @@ header .connected {
   justify-content: end;
 }
 .contentSecondSection .pictureOfDish img:first-child {
+  width: 100%;
   border-radius: 40px;
   z-index: 2;
-  background-size: cover;
 }
 .contentSecondSection .pictureOfDish .pattern {
   top: 395px;
@@ -478,19 +516,20 @@ header .connected {
 }
 .furtherInformation .moreInformation .knowMoreInformation {
   font-weight: bold;
-  color: #6415ff;
+  color: hsl(260deg, 100%, 72%);
   margin-top: 20px;
 }
 .furtherInformation .moreInformation .knowMoreInformation img {
   width: 20px;
   color: red;
 }
-.furtherInformation .moreInformation img[alt=blob] {
+.furtherInformation img[alt=blob] {
   width: 25%;
   opacity: 0.3;
   position: absolute;
   right: -560px;
   top: 150px;
+  overflow: hidden;
 }
 
 .contentThirdSection {
@@ -501,7 +540,7 @@ header .connected {
   width: 50%;
 }
 .contentThirdSection .information > span {
-  color: #6415ff;
+  color: hsl(260deg, 100%, 72%);
   line-height: 3em;
   font-weight: bold;
 }
@@ -548,7 +587,7 @@ header .connected {
 }
 
 footer {
-  background-color: hsla(215deg, 47%, 26%, 0.1);
+  background-color: #edf2f6;
   flex-direction: column;
 }
 footer #footerTop {
@@ -572,18 +611,22 @@ footer #footerTop .newsletter {
 footer #footerTop .newsletter p {
   width: 90%;
 }
-footer #footerTop .newsletter input {
-  padding: 15px 30px;
-  background-color: hsla(215deg, 47%, 26%, 0.1);
-  border: 2px solid hsla(215deg, 47%, 26%, 0.1);
+footer #footerTop .newsletter input[type=email] {
+  padding: 15px 40px;
+  background-color: hsl(214deg, 32%, 91%);
+  border: 2px solid hsl(214deg, 32%, 91%);
   border-radius: 5px;
   box-shadow: 1px 1px 5px hsla(215deg, 47%, 26%, 0.3);
   font-family: "inter", sans-serif;
   margin: 30px 0px;
   font-size: 16px;
+  outline: none;
 }
 footer #footerTop .newsletter button {
   padding: 15px 30px;
+}
+footer #footerTop .newsletter #message {
+  color: hwb(177deg 22% 30%);
 }
 footer #footerBottom {
   display: flex;
@@ -623,6 +666,7 @@ body {
   font-family: "Inter", sans-serif;
   font-size: 16px;
   color: #243e63;
+  overflow-x: hidden;
 }
 
 html {
@@ -698,6 +742,9 @@ header .logo h1 {
   font-weight: 900;
   padding-top: 5px;
 }
+header .logo h1:hover {
+  color: #6415ff;
+}
 header nav {
   width: 60%;
   align-items: center;
@@ -706,6 +753,11 @@ header nav ul {
   margin: 0 60px;
   width: 60%;
   justify-content: space-between;
+}
+header nav a:hover {
+  color: #6415ff;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #6415ff;
 }
 header .connected {
   width: 30%;
@@ -770,7 +822,6 @@ header .connected {
     align-items: center;
   }
   .contentSecondSection .pictureOfDish img {
-    width: 100%;
     margin-bottom: 100px;
   }
   .contentSecondSection .pictureOfDish .pattern {
