@@ -22,14 +22,66 @@
         flex-direction: column;
        
         .information{
-            width: 100%;
+            width: 90%;
             align-items: center;
             margin: auto;
+            text-align: center;
 
             h2{
                 font-size: 32px;
-                display: inline-block;
+            }
+            p{
+                margin: 20px 0;
+            };
+
+            button:last-child{
+                justify-content: end;
             }
         }
+        .pictureOfDish{
+            width: 100%;
+
+            .pattern{
+                top: 350px;
+               left: 560px;
+            }
+            
+        }
     }
+    .contentSecondSection{
+        flex-direction: column;
+    
+        .information{
+            width: 100%;
+            text-align: center;
+
+            h2{
+                font-size: 32px;
+            }
+            p{
+                margin: 20px 0;
+                margin-right: 0
+            };
+
+            button:last-child{
+                justify-content: end;
+            }
+        }
+        .pictureOfDish{
+            width: 100%;
+            align-items: center;
+
+            img{
+                width: 100%;
+                margin-bottom: 100px;
+                
+            }
+            .pattern{
+                width: 150px;
+                top: 350px;
+                left: 250px;
+            }
+        }
+            
+    };
 }
