@@ -11,9 +11,9 @@ order.addEventListener('click', () => {
 })
 
 // JS2
-meet = document.querySelector("#tomeet")
-pictures = document.getElementsByClassName('pictureFirstSection')
-video = document.querySelector("#videoyoutube")
+let meet = document.querySelector("#tomeet")
+let pictures = document.getElementsByClassName('pictureFirstSection')
+let video = document.querySelector("#videoyoutube")
 
 meet.addEventListener('click', () => {
     for(picture of pictures){
@@ -60,15 +60,12 @@ send.addEventListener('click', () => {
 
 //menu 
 
-console.log(window.onresize)
+
 
 let menu = document.querySelector("#navMenu")
 let icon = document.querySelector("#icon")
 let iconmenu = document.querySelector("#iconMenu")
 let cross = document.querySelector("#cross")
-
-
-// window.onresize < 768 ?  : null
 
 window.addEventListener('resize', () => {
     console.log(window.innerWidth)
@@ -88,10 +85,7 @@ cross.addEventListener('click', () => {
     menu.classList.replace('menu', 'displaynone')
     cross.classList.add('displaynone')
 })
-//     window.innerWidth < 768 ? iconmenu.classList.remove('displaynone') : null
-//     window.innerWidth < 768 ? menu.classList.add('displaynone') : null
-//     window.innerWidth > 768 ? menu.classList.remove('displaynone', 'menu') : null
-// })
+
 
 
 
