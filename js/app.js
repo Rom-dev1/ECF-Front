@@ -68,12 +68,13 @@ let iconmenu = document.querySelector("#iconMenu")
 let cross = document.querySelector("#cross")
 
 
-window.onresize < 768 ? menu.classList.add('displaynone') : null
+// window.onresize < 768 ?  : null
 
 window.addEventListener('resize', () => {
     console.log(window.innerWidth)
+    cross.classList.add('displaynone')
     window.innerWidth > 768 ? menu.classList.remove('displaynone') : menu.classList.add('displaynone')
-    window.innerWidth > 768 ? menu.classList.remove('menu') : null
+    window.innerWidth > 768 ? menu.classList.replace('menu', 'displaynone') : null
     window.innerWidth > 768 ? cross.classList.add('displaynone') : null
     window.innerWidth < 768 ? iconmenu.classList.remove('displaynone') : iconmenu.classList.add('displaynone')
 })
@@ -82,6 +83,11 @@ iconmenu.addEventListener('click', () => {
     menu.classList.replace('displaynone', 'menu')
     menu.classList.contains('menu') ? cross.classList.remove('displaynone') : null
 }) 
+
+cross.addEventListener('click', () => {
+    menu.classList.replace('menu', 'displaynone')
+    cross.classList.add('displaynone')
+})
 //     window.innerWidth < 768 ? iconmenu.classList.remove('displaynone') : null
 //     window.innerWidth < 768 ? menu.classList.add('displaynone') : null
 //     window.innerWidth > 768 ? menu.classList.remove('displaynone', 'menu') : null

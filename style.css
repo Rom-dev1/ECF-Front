@@ -25,6 +25,7 @@ ul li a {
 
 a {
   text-decoration: none;
+  color: #243e63;
 }
 
 p {
@@ -64,6 +65,21 @@ button {
   font-size: 16px;
   font-family: "Inter", sans-serif;
   color: #243e63;
+}
+
+.displaynone {
+  display: none;
+}
+
+.menu {
+  width: 90%;
+  background-color: white;
+  position: absolute;
+  top: 10px;
+  z-index: 4;
+  padding: 50px;
+  border: 1px solid lightgrey;
+  border-radius: 10px;
 }
 
 * {
@@ -93,6 +109,7 @@ ul li a {
 
 a {
   text-decoration: none;
+  color: #243e63;
 }
 
 p {
@@ -134,6 +151,21 @@ button {
   color: #243e63;
 }
 
+.displaynone {
+  display: none;
+}
+
+.menu {
+  width: 90%;
+  background-color: white;
+  position: absolute;
+  top: 10px;
+  z-index: 4;
+  padding: 50px;
+  border: 1px solid lightgrey;
+  border-radius: 10px;
+}
+
 header {
   flex-direction: row;
   justify-content: space-between;
@@ -156,17 +188,15 @@ header .logo h1:hover {
   color: #6415ff;
 }
 header nav {
-  width: 60%;
+  width: 55%;
   align-items: center;
-}
-header nav ul {
-  margin: 0 60px;
-  width: 60%;
   justify-content: space-between;
+}
+header nav a {
+  padding-bottom: 10px;
 }
 header nav a:hover {
   color: #6415ff;
-  padding-bottom: 10px;
   border-bottom: 1px solid #6415ff;
 }
 header .connected {
@@ -179,26 +209,48 @@ header .connected {
   .container {
     width: 90%;
   }
-  header a {
-    display: none;
+  header {
+    padding: 20px;
+    margin-bottom: -40px;
+  }
+  header img:first-child {
+    display: flex;
+  }
+  header nav {
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  header nav a {
+    margin-bottom: 20px;
   }
   header .connected {
-    display: none;
+    flex-direction: column;
+  }
+  header .connected span {
+    margin-bottom: 20px;
+  }
+  header #cross {
+    z-index: 8;
   }
   .contentFirstSection {
     flex-direction: column;
+    margin-top: 0;
+    margin-bottom: -150px;
   }
   .contentFirstSection .information {
     width: 90%;
     align-items: center;
     margin: auto;
     text-align: center;
+    padding: 0;
+    padding-bottom: 40px;
   }
   .contentFirstSection .information h2 {
     font-size: 32px;
   }
   .contentFirstSection .information p {
     margin: 20px 0;
+    font-size: 14px;
   }
   .contentFirstSection .information button:last-child {
     justify-content: end;
@@ -207,15 +259,17 @@ header .connected {
     width: 100%;
   }
   .contentFirstSection .pictureOfDish .pattern {
-    top: 350px;
-    left: 560px;
+    bottom: 70px;
+    left: 30px;
   }
   .contentSecondSection {
     flex-direction: column;
   }
   .contentSecondSection .information {
-    width: 100%;
+    margin: auto;
+    width: 90%;
     text-align: center;
+    padding: 0;
   }
   .contentSecondSection .information h2 {
     font-size: 32px;
@@ -223,6 +277,7 @@ header .connected {
   .contentSecondSection .information p {
     margin: 20px 0;
     width: 100%;
+    font-size: 14px;
   }
   .contentSecondSection .information button:last-child {
     justify-content: end;
@@ -231,13 +286,11 @@ header .connected {
     width: 100%;
     align-items: center;
   }
-  .contentSecondSection .pictureOfDish img {
-    margin-bottom: 100px;
-  }
   .contentSecondSection .pictureOfDish .pattern {
-    width: 150px;
-    top: 300px;
-    left: 225px;
+    bottom: 60px;
+  }
+  .mid {
+    margin: 120px;
   }
   .mid h2 {
     font-size: 34px;
@@ -255,7 +308,8 @@ header .connected {
     margin-bottom: 100px;
   }
   .contentThirdSection .information {
-    width: 100%;
+    margin: auto;
+    width: 90%;
     text-align: center;
   }
   .contentThirdSection .information h2 {
@@ -264,6 +318,7 @@ header .connected {
   .contentThirdSection .information p {
     margin: 20px 0;
     width: 100%;
+    font-size: 14px;
   }
   .contentThirdSection .information .displayNumber {
     width: 100%;
@@ -276,14 +331,9 @@ header .connected {
     width: 100%;
     align-items: center;
   }
-  .contentThirdSection .pictureOfDish img {
-    width: 100%;
-    margin-bottom: 100px;
-  }
   .contentThirdSection .pictureOfDish .pattern {
-    width: 150px;
-    top: 300px;
-    left: 225px;
+    width: 20%;
+    bottom: 60px;
   }
   footer {
     width: 100%;
@@ -334,17 +384,15 @@ header .logo h1:hover {
   color: #6415ff;
 }
 header nav {
-  width: 60%;
+  width: 55%;
   align-items: center;
-}
-header nav ul {
-  margin: 0 60px;
-  width: 60%;
   justify-content: space-between;
+}
+header nav a {
+  padding-bottom: 10px;
 }
 header nav a:hover {
   color: #6415ff;
-  padding-bottom: 10px;
   border-bottom: 1px solid #6415ff;
 }
 header .connected {
@@ -415,10 +463,11 @@ header .connected {
   color: #6415ff;
 }
 .contentFirstSection .pictureOfDish {
+  flex-direction: column;
+  align-items: flex-end;
   position: relative;
   width: 50%;
   z-index: 2;
-  justify-content: end;
 }
 .contentFirstSection .pictureOfDish img:first-child {
   width: 100%;
@@ -426,8 +475,9 @@ header .connected {
   z-index: 1;
 }
 .contentFirstSection .pictureOfDish .pattern {
-  top: 385px;
-  left: 620px;
+  margin-right: 0;
+  left: 60px;
+  bottom: 100px;
 }
 .contentFirstSection img[alt=blop] {
   position: absolute;
@@ -453,7 +503,8 @@ header .connected {
 }
 
 .pattern {
-  position: absolute;
+  display: flex;
+  position: relative;
   z-index: -1;
   width: 20%;
   opacity: 0.3;
@@ -490,8 +541,8 @@ header .connected {
   z-index: 2;
 }
 .contentSecondSection .pictureOfDish .pattern {
-  top: 395px;
-  left: 300px;
+  bottom: 70px;
+  margin: auto;
 }
 
 .mid {
@@ -580,7 +631,6 @@ header .connected {
   position: relative;
   width: 50%;
   z-index: 1;
-  justify-content: end;
 }
 .contentThirdSection .pictureOfDish img:first-child {
   width: 100%;
@@ -588,8 +638,8 @@ header .connected {
   z-index: 1;
 }
 .contentThirdSection .pictureOfDish .pattern {
-  top: 410px;
-  left: 300px;
+  bottom: 70px;
+  margin: auto;
 }
 
 footer {
@@ -604,12 +654,18 @@ footer #footerTop {
   padding: 50px 0;
   border-bottom: 2px solid hsla(215deg, 47%, 26%, 0.1);
 }
-footer #footerTop h4 {
+footer #footerTop .link h4 {
   margin-bottom: 20px;
   text-transform: uppercase;
 }
-footer #footerTop li {
+footer #footerTop .link li {
   margin-bottom: 10px;
+}
+footer #footerTop .link li a {
+  padding-bottom: 5px;
+}
+footer #footerTop .link a:hover {
+  border-bottom: 1px solid black;
 }
 footer #footerTop .newsletter {
   line-height: 2em;
@@ -627,6 +683,9 @@ footer #footerTop .newsletter input[type=email] {
   margin: 30px 0px;
   font-size: 16px;
   outline: none;
+}
+footer #footerTop .newsletter input[type=email]:hover {
+  outline: 1px solid #6415ff;
 }
 footer #footerTop .newsletter button {
   padding: 15px 30px;
@@ -661,6 +720,9 @@ footer #footerBottom img[alt=icon] {
   padding: 10px;
   margin: 0 5px;
 }
+footer #footerBottom img[alt=icon]:hover {
+  background-color: #4d4d4d;
+}
 
 * {
   box-sizing: border-box;
@@ -689,6 +751,7 @@ ul li a {
 
 a {
   text-decoration: none;
+  color: #243e63;
 }
 
 p {
@@ -730,6 +793,21 @@ button {
   color: #243e63;
 }
 
+.displaynone {
+  display: none;
+}
+
+.menu {
+  width: 90%;
+  background-color: white;
+  position: absolute;
+  top: 10px;
+  z-index: 4;
+  padding: 50px;
+  border: 1px solid lightgrey;
+  border-radius: 10px;
+}
+
 header {
   flex-direction: row;
   justify-content: space-between;
@@ -752,17 +830,15 @@ header .logo h1:hover {
   color: #6415ff;
 }
 header nav {
-  width: 60%;
+  width: 55%;
   align-items: center;
-}
-header nav ul {
-  margin: 0 60px;
-  width: 60%;
   justify-content: space-between;
+}
+header nav a {
+  padding-bottom: 10px;
 }
 header nav a:hover {
   color: #6415ff;
-  padding-bottom: 10px;
   border-bottom: 1px solid #6415ff;
 }
 header .connected {
@@ -775,26 +851,48 @@ header .connected {
   .container {
     width: 90%;
   }
-  header a {
-    display: none;
+  header {
+    padding: 20px;
+    margin-bottom: -40px;
+  }
+  header img:first-child {
+    display: flex;
+  }
+  header nav {
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  header nav a {
+    margin-bottom: 20px;
   }
   header .connected {
-    display: none;
+    flex-direction: column;
+  }
+  header .connected span {
+    margin-bottom: 20px;
+  }
+  header #cross {
+    z-index: 8;
   }
   .contentFirstSection {
     flex-direction: column;
+    margin-top: 0;
+    margin-bottom: -150px;
   }
   .contentFirstSection .information {
     width: 90%;
     align-items: center;
     margin: auto;
     text-align: center;
+    padding: 0;
+    padding-bottom: 40px;
   }
   .contentFirstSection .information h2 {
     font-size: 32px;
   }
   .contentFirstSection .information p {
     margin: 20px 0;
+    font-size: 14px;
   }
   .contentFirstSection .information button:last-child {
     justify-content: end;
@@ -803,15 +901,17 @@ header .connected {
     width: 100%;
   }
   .contentFirstSection .pictureOfDish .pattern {
-    top: 350px;
-    left: 560px;
+    bottom: 70px;
+    left: 30px;
   }
   .contentSecondSection {
     flex-direction: column;
   }
   .contentSecondSection .information {
-    width: 100%;
+    margin: auto;
+    width: 90%;
     text-align: center;
+    padding: 0;
   }
   .contentSecondSection .information h2 {
     font-size: 32px;
@@ -819,6 +919,7 @@ header .connected {
   .contentSecondSection .information p {
     margin: 20px 0;
     width: 100%;
+    font-size: 14px;
   }
   .contentSecondSection .information button:last-child {
     justify-content: end;
@@ -827,13 +928,11 @@ header .connected {
     width: 100%;
     align-items: center;
   }
-  .contentSecondSection .pictureOfDish img {
-    margin-bottom: 100px;
-  }
   .contentSecondSection .pictureOfDish .pattern {
-    width: 150px;
-    top: 300px;
-    left: 225px;
+    bottom: 60px;
+  }
+  .mid {
+    margin: 120px;
   }
   .mid h2 {
     font-size: 34px;
@@ -851,7 +950,8 @@ header .connected {
     margin-bottom: 100px;
   }
   .contentThirdSection .information {
-    width: 100%;
+    margin: auto;
+    width: 90%;
     text-align: center;
   }
   .contentThirdSection .information h2 {
@@ -860,6 +960,7 @@ header .connected {
   .contentThirdSection .information p {
     margin: 20px 0;
     width: 100%;
+    font-size: 14px;
   }
   .contentThirdSection .information .displayNumber {
     width: 100%;
@@ -872,14 +973,9 @@ header .connected {
     width: 100%;
     align-items: center;
   }
-  .contentThirdSection .pictureOfDish img {
-    width: 100%;
-    margin-bottom: 100px;
-  }
   .contentThirdSection .pictureOfDish .pattern {
-    width: 150px;
-    top: 300px;
-    left: 225px;
+    width: 20%;
+    bottom: 60px;
   }
   footer {
     width: 100%;
