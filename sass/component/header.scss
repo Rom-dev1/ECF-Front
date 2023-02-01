@@ -29,10 +29,11 @@ header{
         width: 55%;
         align-items: center;
         justify-content: space-between;
-
+        a{
+            padding-bottom: 10px;
+        }
         a:hover{
             color: $color-secondary;
-            padding-bottom: 10px;
             border-bottom: 1px solid $color-secondary;
         }
     }

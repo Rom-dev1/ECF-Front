@@ -10,15 +10,23 @@ footer{
         padding: 50px 0;
         border-bottom: 2px solid hsl(215, 47%, 26%, 0.1);
         
-        h4{
-            margin-bottom: 20px;
-            text-transform: uppercase;
-        }
-        
-        li{
-            margin-bottom: 10px;
-        }
+        .link {
+            h4{
+                margin-bottom: 20px;
+                text-transform: uppercase;
+            }
+            
+            li{
+                margin-bottom: 10px;
+            }
 
+            li a{
+                padding-bottom: 5px;
+            }
+            a:hover{
+                border-bottom: 1px solid black;
+            }
+        }
         .newsletter{
             line-height: 2em;
 
@@ -35,6 +43,10 @@ footer{
                 margin: 30px 0px;
                 font-size: 16px;
                 outline: none;
+
+                &:hover{
+                    outline: 1px solid $color-secondary;
+                }
             }
 
             button{
@@ -80,6 +92,10 @@ footer{
             border-radius: 50%;
             padding: 10px;
             margin: 0 5px;
+
+            &:hover{
+                background-color: lighten($color: #000000, $amount: 30%);
+            }
           
         }
     }
