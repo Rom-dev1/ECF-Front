@@ -9,6 +9,7 @@
 
     header{
         padding:  20px;
+        margin-bottom: -40px;
         img:first-child{
             display: flex;
         }
@@ -37,6 +38,7 @@
     .contentFirstSection{
         flex-direction: column;
         margin-top: 0;
+        margin-bottom: -150px;
 
         .information{
             width: 90%;
@@ -51,6 +53,7 @@
             }
             p{
                 margin: 20px 0;
+                font-size: 14px;
             };
 
             button:last-child{
@@ -61,8 +64,8 @@
             width: 100%;
 
             .pattern{
-                top: 350px;
-               left: 560px;
+               bottom: 70px;
+               left: 30px;
             }
             
         }
@@ -71,15 +74,18 @@
         flex-direction: column;
     
         .information{
-            width: 100%;
+            margin: auto;
+            width: 90%;
             text-align: center;
+            padding: 0;
 
             h2{
                 font-size: 32px;
             }
             p{
                 margin: 20px 0;
-                width: 100%
+                width: 100%;
+                font-size: 14px;
             };
 
             button:last-child{
@@ -89,21 +95,16 @@
         .pictureOfDish{
             width: 100%;
             align-items: center;
-
-            img{
-                margin-bottom: 100px;
                 
-            }
+            
             .pattern{
-                position: static;
-                width: 150px;
-                top: 300px;
-                left: 225px;
+                bottom: 60px;
             }
         }
         
     }
     .mid{
+        margin: 120px;
         h2 {font-size: 34px ;
             margin: 0 5px ;
         }
@@ -122,7 +123,8 @@
         flex-direction: column-reverse;
         margin-bottom: 100px;
         .information{
-            width: 100%;
+            margin: auto;
+            width: 90%;
             text-align: center;
 
             h2{
@@ -130,7 +132,8 @@
             }
             p{
                 margin: 20px 0;
-                width: 100%
+                width: 100%;
+                font-size: 14px;
             };
         
             .displayNumber{
@@ -146,15 +149,9 @@
             width: 100%;
             align-items: center;
 
-            img{
-                width: 100%;
-                margin-bottom: 100px;
-                
-            }
             .pattern{
-                width: 150px;
-                top: 300px;
-                left: 225px;
+                width: 20%;
+                bottom: 60px;
             }
         }
     }
