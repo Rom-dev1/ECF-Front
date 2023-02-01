@@ -64,12 +64,13 @@ send.addEventListener('click', () => {
 
 
 let menu = document.querySelector("#navMenu")
-let icon = document.querySelector("#icon")
 let iconmenu = document.querySelector("#iconMenu")
 let cross = document.querySelector("#cross")
 
+window.innerWidth < 768 ? menu.classList.add('displaynone') : null
+window.innerWidth < 768 ? iconmenu.classList.remove('displaynone') : null
+
 window.addEventListener('resize', () => {
-    console.log(window.innerWidth)
     cross.classList.add('displaynone')
     window.innerWidth > 768 ? menu.classList.remove('displaynone') : menu.classList.add('displaynone')
     window.innerWidth > 768 ? menu.classList.replace('menu', 'displaynone') : null
