@@ -25,11 +25,11 @@
             font-weight: bold;
             color: $color-secondaryLight;
             margin-top: 20px;
+        }
 
-            img{
-                width: 20px;
-                color: red;
-            }
+        &:hover{
+            transition: 1s;
+            transform: scale(1.1);
         }
     }
     img[alt=blob]{
@@ -38,7 +38,6 @@
         position: absolute;
         right: -560px;
         top: 150px;
-        overflow: hidden;
     }
     
 }

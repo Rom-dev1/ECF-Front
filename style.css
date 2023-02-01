@@ -239,6 +239,10 @@ header .connected {
     top: 300px;
     left: 225px;
   }
+  .mid h2 {
+    font-size: 34px;
+    margin: 0 5px;
+  }
   .furtherInformation {
     flex-direction: column;
     margin-bottom: 100px;
@@ -494,6 +498,9 @@ header .connected {
   justify-content: center;
   margin: 220px 0px 100px 0;
 }
+.mid h2 {
+  margin: 0 15px;
+}
 
 .furtherInformation {
   width: 65%;
@@ -519,9 +526,9 @@ header .connected {
   color: hsl(260deg, 100%, 72%);
   margin-top: 20px;
 }
-.furtherInformation .moreInformation .knowMoreInformation img {
-  width: 20px;
-  color: red;
+.furtherInformation .moreInformation:hover {
+  transition: 1s;
+  transform: scale(1.1);
 }
 .furtherInformation img[alt=blob] {
   width: 25%;
@@ -529,7 +536,6 @@ header .connected {
   position: absolute;
   right: -560px;
   top: 150px;
-  overflow: hidden;
 }
 
 .contentThirdSection {
@@ -577,9 +583,9 @@ header .connected {
   justify-content: end;
 }
 .contentThirdSection .pictureOfDish img:first-child {
+  width: 100%;
   border-radius: 40px;
-  z-index: 2;
-  background-size: cover;
+  z-index: 1;
 }
 .contentThirdSection .pictureOfDish .pattern {
   top: 410px;
@@ -828,6 +834,10 @@ header .connected {
     width: 150px;
     top: 300px;
     left: 225px;
+  }
+  .mid h2 {
+    font-size: 34px;
+    margin: 0 5px;
   }
   .furtherInformation {
     flex-direction: column;
