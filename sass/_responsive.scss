@@ -8,13 +8,26 @@
     }
 
     header{
+        
+        img:last-child{
+            display: flex;
+        }
+        nav{
+            flex-direction: column;
+            justify-content: space-between;
 
-        a{
-            display: none;
+            a{
+                margin-bottom: 20px;
+            }
+        }
+        .connected{
+            flex-direction: column;
         }
 
-        .connected{
-            display: none;
+        .menu{
+            z-index: 2;
+            width: 100%;
+            border: 1px solid black;
         }
     }
 

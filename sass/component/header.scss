@@ -23,14 +23,10 @@ header{
         }
     }
     nav {
-        width: 60%;
+        width: 55%;
         align-items: center;
-        
-        ul{
-            margin: 0 60px;
-            width: 60%;
-            justify-content: space-between;
-        }
+        justify-content: space-between;
+
         a:hover{
             color: $color-secondary;
             padding-bottom: 10px;
