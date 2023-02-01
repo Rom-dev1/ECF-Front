@@ -4,6 +4,7 @@
     justify-content: space-between;
     margin-bottom: 300px;
     position: relative;
+    
 
     .moreInformation{
 
@@ -30,13 +31,14 @@
                 color: red;
             }
         }
-
-        img[alt=blob]{
-            width: 25%;
-            opacity: 0.3;
-            position: absolute;
-            right: -560px;
-            top: 150px;
-        }
     }
+    img[alt=blob]{
+        width: 25%;
+        opacity: 0.3;
+        position: absolute;
+        right: -560px;
+        top: 150px;
+        overflow: hidden;
+    }
+    
 }
