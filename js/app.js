@@ -18,6 +18,7 @@ let video = document.querySelector("#videoyoutube")
 meet.addEventListener('click', () => {
     for(picture of pictures){
         picture.classList.add('displaynone')
+        picture.classList.remove('pattern')
     }
     video.classList.remove('displaynone')
 })
