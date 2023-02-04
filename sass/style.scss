@@ -1,7 +1,9 @@
 @import 'base';
 @import 'variables';
 @import 'mixin';
-@import 'responsive';
+@import './mixin_responsive';
+@import './responsive_mobile';
+@import './responsive_tab';
 
 @import './component/header.scss';
 @import './component/buttonCustom.scss';
@@ -13,4 +15,3 @@
 @import './component/furtherInformation.scss';
 @import './component/thirdSection.scss';
 @import './component/footer.scss';
-@import './responsive'
