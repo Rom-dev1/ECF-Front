@@ -1,7 +1,10 @@
 @include mobile("tab-down"){
     .container{
         width: 90%;
-    
+        
+        h2{
+            font-size: $font-size-title-responsive;
+        }
 
         header{
             padding:  20px;
@@ -43,9 +46,6 @@
                 padding: 0;
                 padding-bottom: 40px;
 
-                h2{
-                    font-size: 32px;
-                }
                 p{
                     margin: 20px 0;
                     font-size: 14px;
@@ -77,9 +77,6 @@
                 text-align: center;
                 padding: 0;
 
-                h2{
-                    font-size: 32px;
-                }
                 p{
                     margin: 20px 0;
                     width: 100%;
@@ -102,7 +99,7 @@
         }
         .mid{
             margin: 120px;
-            h2 {font-size: 34px ;
+            h2 {
                 margin: 0 5px ;
             }
         }
@@ -124,9 +121,6 @@
                 width: 90%;
                 text-align: center;
 
-                h2{
-                    font-size: 32px;
-                }
                 p{
                     margin: 20px 0;
                     width: 100%;
