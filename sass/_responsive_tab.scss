@@ -1,0 +1,26 @@
+@include tab("tab-down","tab-up"){
+    .container{
+        
+        h2{
+            font-size: $font-size-title-responsive-tab;
+        }
+        
+        header{
+          .logo{
+            width: 20%;
+          }
+        
+          nav{
+            width: 70%;
+            font-size: 14px;
+          }
+          .connected{
+            button{
+                padding: 10px
+            }
+          }
+        };
+        @include content-first-section-responsive;
+        
+    }
+}
