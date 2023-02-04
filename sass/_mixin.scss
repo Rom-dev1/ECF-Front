@@ -29,14 +29,15 @@
     opacity: 0.3;
 }
 
-@mixin mobile {
-    @media (max-width: 768px) {
+@mixin mobile ($_key) {
+    @media screen 
+        and (max-width: map-get($breakpoints, $_key)) {
         @content;
     }
 }
 
 @mixin tab {
-    @media (min-width: 769px),(max-width: 968px){
-        @content;
+    @media (min-width:768px) and (max-width:991px){
+        @content
     }
 }
