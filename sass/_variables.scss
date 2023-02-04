@@ -4,4 +4,11 @@ $color-third: #e8eaee;
 $color-secondaryLight : hsl(260deg 100% 72%);
 $color-js : hwb(177deg 22% 30%);
 
-$padding-button : 15px 30px
+$padding-button : 15px 30px;
+
+$breakpoints: (
+    "destop-up" : 969px,
+    "tab-down" : 768px,
+    "tab-up" : 968px,
+    "phone-down" : 400px,
+)
