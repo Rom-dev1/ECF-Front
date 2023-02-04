@@ -1,6 +1,6 @@
 @include tab("tab-down","tab-up"){
     .container{
-        
+        width: 85%;
         h2{
             font-size: $font-size-title-responsive-tab;
         }
@@ -21,6 +21,7 @@
           }
         };
         @include content-first-section-responsive;
-        
+        @include content-second-section-responsive;
+        @include content-third-section-responsive;
     }
 }

@@ -33,35 +33,7 @@
             }
         }
         @include content-first-section-responsive;
-        .contentSecondSection{
-            flex-direction: column;
-        
-            .information{
-                margin: auto;
-                width: 90%;
-                @include text-align;
-                padding: 0;
-
-                p{
-                    margin: 20px 0;
-                    width: 100%;
-                    font-size: 14px;
-                };
-
-                button:last-child{
-                    justify-content: end;
-                }
-            }
-            .pictureOfDish{
-                width: 100%;
-                align-items: center;
-                    
-                .pattern{
-                    bottom: 60px;
-                }
-            }
-            
-        }
+        @include content-second-section-responsive;
         .mid{
             margin: 120px;
             h2 {
@@ -78,39 +50,7 @@
             }
         }   
 
-        .contentThirdSection{
-            flex-direction: column-reverse;
-            margin-bottom: 100px;
-            .information{
-                margin: auto;
-                width: 90%;
-                @include text-align;
-
-                p{
-                    margin: 20px 0;
-                    width: 100%;
-                    font-size: 14px;
-                };
-            
-                .displayNumber{
-                    width: 100%;
-                    justify-content: space-around;
-
-                    .changeNumber{
-                        padding: 0
-                    }
-                };
-            }
-            .pictureOfDish{
-                width: 100%;
-                align-items: center;
-
-                .pattern{
-                    width: 20%;
-                    bottom: 60px;
-                }
-            }
-        }
+        @include content-third-section-responsive;
 }
     footer{
         width: 100%;
