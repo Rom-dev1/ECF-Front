@@ -82,39 +82,42 @@ button {
   border-radius: 10px;
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .container {
     width: 90%;
   }
-  header {
+  .container h2 {
+    font-size: 32px;
+  }
+  .container header {
     padding: 20px;
     margin-bottom: -40px;
   }
-  header img:first-child {
+  .container header img:first-child {
     display: flex;
   }
-  header nav {
+  .container header nav {
     flex-direction: column;
     justify-content: space-between;
   }
-  header nav a {
+  .container header nav a {
     margin-bottom: 20px;
   }
-  header .connected {
+  .container header .connected {
     flex-direction: column;
   }
-  header .connected span {
+  .container header .connected span {
     margin-bottom: 20px;
   }
-  header #cross {
+  .container header #cross {
     z-index: 8;
   }
-  .contentFirstSection {
+  .container .contentFirstSection {
     flex-direction: column;
     margin-top: 0;
     margin-bottom: -150px;
   }
-  .contentFirstSection .information {
+  .container .contentFirstSection .information {
     width: 90%;
     align-items: center;
     margin: auto;
@@ -122,96 +125,87 @@ button {
     padding: 0;
     padding-bottom: 40px;
   }
-  .contentFirstSection .information h2 {
-    font-size: 32px;
-  }
-  .contentFirstSection .information p {
+  .container .contentFirstSection .information p {
     margin: 20px 0;
     font-size: 14px;
   }
-  .contentFirstSection .information button:last-child {
+  .container .contentFirstSection .information button:last-child {
     justify-content: end;
   }
-  .contentFirstSection .pictureOfDish {
-    width: 100%;
+  .container .contentFirstSection .pictureOfDish {
+    width: 90%;
+    margin: auto;
   }
-  .contentFirstSection .pictureOfDish .pattern {
+  .container .contentFirstSection .pictureOfDish .pattern {
     bottom: 70px;
     left: 30px;
   }
-  .contentFirstSection .pictureOfDish #videoyoutube {
+  .container .contentFirstSection .pictureOfDish #videoyoutube {
     width: 100%;
   }
-  .contentSecondSection {
+  .container .contentSecondSection {
     flex-direction: column;
   }
-  .contentSecondSection .information {
+  .container .contentSecondSection .information {
     margin: auto;
     width: 90%;
     text-align: center;
     padding: 0;
   }
-  .contentSecondSection .information h2 {
-    font-size: 32px;
-  }
-  .contentSecondSection .information p {
+  .container .contentSecondSection .information p {
     margin: 20px 0;
     width: 100%;
     font-size: 14px;
   }
-  .contentSecondSection .information button:last-child {
+  .container .contentSecondSection .information button:last-child {
     justify-content: end;
   }
-  .contentSecondSection .pictureOfDish {
-    width: 100%;
-    align-items: center;
+  .container .contentSecondSection .pictureOfDish {
+    width: 90%;
+    margin: auto;
   }
-  .contentSecondSection .pictureOfDish .pattern {
+  .container .contentSecondSection .pictureOfDish .pattern {
     bottom: 60px;
   }
-  .mid {
+  .container .mid {
     margin: 120px;
   }
-  .mid h2 {
-    font-size: 34px;
+  .container .mid h2 {
     margin: 0 5px;
   }
-  .furtherInformation {
+  .container .furtherInformation {
     flex-direction: column;
     margin-bottom: 100px;
   }
-  .furtherInformation .moreInformation {
+  .container .furtherInformation .moreInformation {
     margin-bottom: 40px;
   }
-  .contentThirdSection {
+  .container .contentThirdSection {
     flex-direction: column-reverse;
     margin-bottom: 100px;
   }
-  .contentThirdSection .information {
+  .container .contentThirdSection .information {
     margin: auto;
     width: 90%;
     text-align: center;
   }
-  .contentThirdSection .information h2 {
-    font-size: 32px;
-  }
-  .contentThirdSection .information p {
+  .container .contentThirdSection .information p {
     margin: 20px 0;
     width: 100%;
     font-size: 14px;
   }
-  .contentThirdSection .information .displayNumber {
+  .container .contentThirdSection .information .displayNumber {
     width: 100%;
     justify-content: space-around;
   }
-  .contentThirdSection .information .displayNumber .changeNumber {
+  .container .contentThirdSection .information .displayNumber .changeNumber {
     padding: 0;
   }
-  .contentThirdSection .pictureOfDish {
-    width: 100%;
-    align-items: center;
+  .container .contentThirdSection .pictureOfDish {
+    width: 90%;
+    margin: auto;
   }
-  .contentThirdSection .pictureOfDish .pattern {
+  .container .contentThirdSection .pictureOfDish .pattern {
     width: 20%;
     bottom: 60px;
   }
@@ -240,6 +234,108 @@ button {
   }
   footer #footerBottom div {
     margin-bottom: 20px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 968px) {
+  .container {
+    width: 85%;
+  }
+  .container h2 {
+    font-size: 38px;
+  }
+  .container header .logo {
+    width: 20%;
+  }
+  .container header nav {
+    width: 70%;
+    font-size: 14px;
+  }
+  .container header .connected button {
+    padding: 10px;
+  }
+  .container .contentFirstSection {
+    flex-direction: column;
+    margin-top: 0;
+    margin-bottom: -150px;
+  }
+  .container .contentFirstSection .information {
+    width: 90%;
+    align-items: center;
+    margin: auto;
+    text-align: center;
+    padding: 0;
+    padding-bottom: 40px;
+  }
+  .container .contentFirstSection .information p {
+    margin: 20px 0;
+    font-size: 14px;
+  }
+  .container .contentFirstSection .information button:last-child {
+    justify-content: end;
+  }
+  .container .contentFirstSection .pictureOfDish {
+    width: 90%;
+    margin: auto;
+  }
+  .container .contentFirstSection .pictureOfDish .pattern {
+    bottom: 70px;
+    left: 30px;
+  }
+  .container .contentFirstSection .pictureOfDish #videoyoutube {
+    width: 100%;
+  }
+  .container .contentSecondSection {
+    flex-direction: column;
+  }
+  .container .contentSecondSection .information {
+    margin: auto;
+    width: 90%;
+    text-align: center;
+    padding: 0;
+  }
+  .container .contentSecondSection .information p {
+    margin: 20px 0;
+    width: 100%;
+    font-size: 14px;
+  }
+  .container .contentSecondSection .information button:last-child {
+    justify-content: end;
+  }
+  .container .contentSecondSection .pictureOfDish {
+    width: 90%;
+    margin: auto;
+  }
+  .container .contentSecondSection .pictureOfDish .pattern {
+    bottom: 60px;
+  }
+  .container .contentThirdSection {
+    flex-direction: column-reverse;
+    margin-bottom: 100px;
+  }
+  .container .contentThirdSection .information {
+    margin: auto;
+    width: 90%;
+    text-align: center;
+  }
+  .container .contentThirdSection .information p {
+    margin: 20px 0;
+    width: 100%;
+    font-size: 14px;
+  }
+  .container .contentThirdSection .information .displayNumber {
+    width: 100%;
+    justify-content: space-around;
+  }
+  .container .contentThirdSection .information .displayNumber .changeNumber {
+    padding: 0;
+  }
+  .container .contentThirdSection .pictureOfDish {
+    width: 90%;
+    margin: auto;
+  }
+  .container .contentThirdSection .pictureOfDish .pattern {
+    width: 20%;
+    bottom: 60px;
   }
 }
 header {
@@ -600,167 +696,6 @@ footer #footerBottom img[alt=icon] {
 }
 footer #footerBottom img[alt=icon]:hover {
   background-color: #4d4d4d;
-}
-
-@media (max-width: 768px) {
-  .container {
-    width: 90%;
-  }
-  header {
-    padding: 20px;
-    margin-bottom: -40px;
-  }
-  header img:first-child {
-    display: flex;
-  }
-  header nav {
-    flex-direction: column;
-    justify-content: space-between;
-  }
-  header nav a {
-    margin-bottom: 20px;
-  }
-  header .connected {
-    flex-direction: column;
-  }
-  header .connected span {
-    margin-bottom: 20px;
-  }
-  header #cross {
-    z-index: 8;
-  }
-  .contentFirstSection {
-    flex-direction: column;
-    margin-top: 0;
-    margin-bottom: -150px;
-  }
-  .contentFirstSection .information {
-    width: 90%;
-    align-items: center;
-    margin: auto;
-    text-align: center;
-    padding: 0;
-    padding-bottom: 40px;
-  }
-  .contentFirstSection .information h2 {
-    font-size: 32px;
-  }
-  .contentFirstSection .information p {
-    margin: 20px 0;
-    font-size: 14px;
-  }
-  .contentFirstSection .information button:last-child {
-    justify-content: end;
-  }
-  .contentFirstSection .pictureOfDish {
-    width: 100%;
-  }
-  .contentFirstSection .pictureOfDish .pattern {
-    bottom: 70px;
-    left: 30px;
-  }
-  .contentFirstSection .pictureOfDish #videoyoutube {
-    width: 100%;
-  }
-  .contentSecondSection {
-    flex-direction: column;
-  }
-  .contentSecondSection .information {
-    margin: auto;
-    width: 90%;
-    text-align: center;
-    padding: 0;
-  }
-  .contentSecondSection .information h2 {
-    font-size: 32px;
-  }
-  .contentSecondSection .information p {
-    margin: 20px 0;
-    width: 100%;
-    font-size: 14px;
-  }
-  .contentSecondSection .information button:last-child {
-    justify-content: end;
-  }
-  .contentSecondSection .pictureOfDish {
-    width: 100%;
-    align-items: center;
-  }
-  .contentSecondSection .pictureOfDish .pattern {
-    bottom: 60px;
-  }
-  .mid {
-    margin: 120px;
-  }
-  .mid h2 {
-    font-size: 34px;
-    margin: 0 5px;
-  }
-  .furtherInformation {
-    flex-direction: column;
-    margin-bottom: 100px;
-  }
-  .furtherInformation .moreInformation {
-    margin-bottom: 40px;
-  }
-  .contentThirdSection {
-    flex-direction: column-reverse;
-    margin-bottom: 100px;
-  }
-  .contentThirdSection .information {
-    margin: auto;
-    width: 90%;
-    text-align: center;
-  }
-  .contentThirdSection .information h2 {
-    font-size: 32px;
-  }
-  .contentThirdSection .information p {
-    margin: 20px 0;
-    width: 100%;
-    font-size: 14px;
-  }
-  .contentThirdSection .information .displayNumber {
-    width: 100%;
-    justify-content: space-around;
-  }
-  .contentThirdSection .information .displayNumber .changeNumber {
-    padding: 0;
-  }
-  .contentThirdSection .pictureOfDish {
-    width: 100%;
-    align-items: center;
-  }
-  .contentThirdSection .pictureOfDish .pattern {
-    width: 20%;
-    bottom: 60px;
-  }
-  footer {
-    width: 100%;
-  }
-  footer #footerTop {
-    width: 90%;
-    margin: auto;
-    flex-wrap: wrap;
-  }
-  footer #footerTop .link {
-    width: 24%;
-    padding: 10px;
-    margin-bottom: 40px;
-  }
-  footer #footerTop .newsletter {
-    width: 100%;
-    text-align: center;
-  }
-  footer #footerTop .newsletter p {
-    width: 100%;
-  }
-  footer #footerBottom {
-    flex-direction: column;
-  }
-  footer #footerBottom div {
-    margin-bottom: 20px;
-  }
 }
 
 /*# sourceMappingURL=style.css.map */
