@@ -29,6 +29,10 @@
     opacity: 0.3;
 }
 
+@mixin text-align{
+    text-align: center;
+}
+
 @mixin mobile ($_key) {
     @media screen 
         and (max-width: map-get($breakpoints, $_key)) {
@@ -36,8 +40,11 @@
     }
 }
 
-@mixin tab {
-    @media (min-width:768px) and (max-width:991px){
+@mixin tab ($_keymin, $_keymax){
+    @media screen 
+        and (min-width: map-get($breakpoints, $_keymin))
+        and (max-width: map-get($breakpoints, $_keymax)){
         @content
     }
 }
+  

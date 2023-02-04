@@ -3,7 +3,7 @@
         width: 90%;
         
         h2{
-            font-size: $font-size-title-responsive;
+            font-size: $font-size-title-responsive-mobile;
         }
 
         header{
@@ -42,7 +42,7 @@
                 width: 90%;
                 align-items: center;
                 margin: auto;
-                text-align: center;
+                @include text-align;
                 padding: 0;
                 padding-bottom: 40px;
 
@@ -74,7 +74,7 @@
             .information{
                 margin: auto;
                 width: 90%;
-                text-align: center;
+                @include text-align;
                 padding: 0;
 
                 p{
@@ -119,7 +119,7 @@
             .information{
                 margin: auto;
                 width: 90%;
-                text-align: center;
+                @include text-align;
 
                 p{
                     margin: 20px 0;
@@ -164,7 +164,7 @@
             
             .newsletter{
                 width: 100%;
-                text-align: center;
+                @include text-align;
                 
                 p{
                     width: 100%;
