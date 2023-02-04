@@ -33,43 +33,7 @@
     text-align: center;
 }
 
-@mixin content-first-section-responsive{
-    .contentFirstSection{
-        flex-direction: column;
-        margin-top: 0;
-        margin-bottom: -150px;
 
-       .information{
-            width: 90%;
-            align-items: center;
-            margin: auto;
-            @include text-align;
-            padding: 0;
-            padding-bottom: 40px;
-
-            p{
-                margin: 20px 0;
-                font-size: 14px;
-            };
-
-            button:last-child{
-                justify-content: end;
-            }
-
-        }
-        .pictureOfDish{
-            width: 100%;
-
-            .pattern{
-            bottom: 70px;
-            left: 30px;
-            }
-            #videoyoutube{
-                width: 100%;
-            }
-        }
-    }
-}
 
 @mixin mobile ($_key) {
     @media screen 
